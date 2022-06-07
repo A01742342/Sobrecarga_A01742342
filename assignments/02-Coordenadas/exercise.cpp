@@ -10,20 +10,26 @@ int main()
   Rect r2(3,4);
   Rect r3;
   Rect r4;
+  Rect r5;
+  Rect r6;
 
   r3 = r1 + r2;
+  r5 = r1 - r2;
 
-  std::cout << "Sumando coordenadas rectangulares:\n";
+  std::cout << "Sumando y restando coordenadas rectangulares:\n";
   std::cout << r1 << " + \n" << r2 << " = \n" << r3;
+  std::cout << r1 << " - \n" << r2 << " = \n" << r5;
 
   std::cout << "Valor de PI radianes\n";
   std::cout << M_PI << "\n";
 
   Polar p1(4,M_PI / 6);
   r4 = r3 + p1;
+  r6 = r3 - p1;
 
-  std::cout << "Sumando coordenadas rectangulares y polares:\n";
+  std::cout << "Sumando y restando coordenadas rectangulares y polares:\n";
   std::cout << r3 << " + \n" << p1 << " = \n" << r4;
+  std::cout << r3 << " - \n" << p1 << " = \n" << r6;
 
   Polar p2(5, M_PI/ 6);
   Polar p3;
@@ -33,4 +39,8 @@ int main()
   std::cout << "Multiplicando coordenadas polares:\n";
   std::cout << p1 << " * \n" << p2 << " = \n" << p3;
 
+  p3 = p1 / p2;
+
+  std::cout << "Dividiendo coordenadas polares:\n";
+  std::cout << p1 << " * \n" << p2 << " = \n" << p3;
 }

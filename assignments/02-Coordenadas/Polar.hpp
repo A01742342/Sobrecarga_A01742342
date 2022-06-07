@@ -14,6 +14,7 @@ public:
     double getTheta();
 
     Polar operator*(Polar);
+    Polar operator/(Polar);
 
     friend std::ostream& operator<<(std::ostream&, Polar);
 };
